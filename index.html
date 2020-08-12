@@ -1,447 +1,140 @@
-/*Ecriture*/
+<!DOCTYPE html>
+<html lang="fr">
+<head>
 
-@font-face {
-    font-family: 'open_sanslight';
-    src: url('fonts/OpenSans-Light-webfont.eot');
-    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
-         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>CV de Kevin Castel</title>
 
-}
+</head>
 
-/* Elements Principaux */
-
-body {
-	font-family: 'open_sanslight', Arial, sans_serif;	
-}
-
-.bloc_AB {
-	display: flex;
-	flex-direction: row;
-	border: 2px #EFEBE9 solid;
-	margin: auto;
-	width: 900px;
-	justify-content: flex-start;
-	max-width: 1280px;
-}
-
-h1 {
-	font-size: 3em;
-}
-
-p, ul {
-	font-size: 0.8em;
-}
-
-/*Elément secondaires*/
-
-/*Bloc A*/
-
-.bloc_A {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	background-color: #00ACC1;
-	width: 300px;	
-
-}
-
-.titre_A {
-	text-align: center;
-	color: #00ACC1;
-	padding-right: 25px;
-	background-color: #B0BEC5;
-}
-
-.photo_kev {
-	width: 200px;
-	border-radius: 50%;
-	border:3px black solid ;
-}
-
-.photo {
-	text-align: center;
-	height: 100px;
-	margin-top: 30px;
-	margin-bottom: 120px;
-}
-
-.contact {
-	height: 150px;
-	margin-top: -20px;
-	margin-bottom: 30px;
-	margin-left: 20px;
-}
-
-.propos {
-	height: 300px;
-	margin-left: 20px;
-
-}
-
-.loisirs {
-	display: flex;
-	flex-direction: row;
-	height: 80px;
+<body>
+<div class="bloc_AB">
 	
-}
-
-.logo {
-	width: 300px;
-}
-
-.biker {
-	margin-left: -100px;
-	margin-top: -120px;
-
-}
-
-.hammer {
-	margin-left: -200px;
-	margin-top: -120px;
-}
-
-.book {
-	margin-left: -200px;
-	margin-top: -120px;
-}
-/*Bloc B*/
-
-.bloc_B {
-	display: flex;
-	flex-direction: column;
-	width: 600px;
-	background-color: white; 
-	padding-left: 20px;
-	padding-right: 20px;	
-}
-
-.sous_titre {
-	margin-top: -35px;
-
-}
-
-.sous_titre_2 {
-	
-	text-decoration: underline solid #00ACC1  ;
-}
-.kevin {
-	color: #00ACC1;
-}
-
-/* Bloc formation*/
-
-.formation0 {
-	display: flex;
-	flex-direction: row;
-
-}
-
-.hat {
-	padding-top: 5px;
-	margin-right: 10px;
-	margin-top: 10px;
-	height: 35px;
-}
-
-.formation {
-	display: flex;
-	flex-direction: column;
-	border-top: 2px solid #00ACC1;
-	margin-top: -9px;
-	padding-top: 10px;
-}
-
-.formation1 {
-	display: flex;
-	flex-direction: row;
-}
-
-.formation1_1 {
-	display: flex;
-	flex-direction: row;
-	margin-right: 20px;
-	width: 200px;
-}
-
-.point {
-	height: 10px;
-	margin-top: 15px;
-	margin-right: 10px;
-}
-
-.formation1_2 {
-	display: flex;
-	flex-direction: column;
-}
-
-.titre1_2 {
-	margin-bottom: -9px;
-	font-weight: bold;
-}
-
-.sous_titre1_2 {
-	margin-bottom: -9px;
-}
-
-.formation2 {
-	display: flex;
-	flex-direction: row;
-}
-
-.formation2_1 {
-	display: flex;
-	flex-direction: row;
-	margin-right: 20px;
-	width: 200px;
-}
-
-.formation2_2 {
-	display: flex;
-	flex-direction: column;
-	margin-left: -22px;
-
-}
-
-.titre2_2 {
-	margin-bottom: -9px;
-	font-weight: bold;
-}
-
-.sous_titre2_2 {
-	margin-bottom: -9px;
-}
-
-/*Bloc expériences*/
-
-.experience0 {
-	display: flex;
-	flex-direction: row;
-}
-
-.briefcase {
-	padding-top: 15px;
-	margin-right: 15px;
-	height: 35px;
-}
-
-.experience1 {
-	display: flex;
-	flex-direction: row;
-	border-top: 2px solid #00ACC1;
-	margin-top: -6px;
-	padding-top: 10px;
-}
-
-.experience1_1 {
-	display: flex;
-	flex-direction: row;
-	margin-right: 17px;
-	width: 205px;
-}
-
-.experience1_2 {
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.titre1_2 {
-	margin-bottom: -9px;
-	font-weight: bold;
-}
-
-.sous_titre1_2 {
-	margin-bottom: -9px;
-}
-
-.experience2 {
-	display: flex;
-	flex-direction: row;
-}
-
-.experience2_1 {
-	display: flex;
-	flex-direction: row;
-	margin-right: 20px;
-	width: 200px;
-}
-
-.experience2_2 {
-	display: flex;
-	flex-direction: column;
-	margin-left: -20px;
-
-}
-
-.titre2_2 {
-	margin-bottom: -9px;
-	font-weight: bold;
-}
-
-.sous_titre2_2 {
-	margin-bottom: -9px;
-}
-
-.experience3 {
-	display: flex;
-	flex-direction: row;
-}
-
-.experience3_1 {
-	display: flex;
-	flex-direction: row;
-	margin-right: 12px;
-	width: 380px;
-}
-
-.experience3_2 {
-	display: flex;
-	flex-direction: column;
-	
-}
-
-.titre3_2 {
-	margin-bottom: -9px;
-	font-weight: bold;
-}
-
-.sous_titre3_2 {
-	margin-bottom: -9px;
-}
-
-/* Bloc recommandation*/
-
-.recommandation0 {
-	display: flex;
-	flex-direction: row;
-}
-
-.edit {
-	padding-top: 10px;
-	height: 35px;
-	margin-right: 10px;
-}
-
-.recommandation {
-	display: flex;
-	flex-direction: row;
-	border-top: 2px solid #00ACC1;
-	margin-top: -6px;
-	padding-top: 10px;
-}
-
-.recommandation2 {
-	margin-left: 130px;
-}
-
-.statut {
-	margin-top: -10px;
-}
-
-.telephone {
-	margin-top: -10px;
-	margin-bottom: -10px;
-}
-
-
-/*Media queries*/
-
-@media all and (min-width: 768px) and (max-width: 1024px) {	/*iPad Vertical*/
-
-	.bloc_AB {
-		padding-right: 200px;
-		margin: auto;
-	}
-
-	.bloc_A {
-		width: 300px;
-	}
-
-	.bloc_B {
-		width: 400px;
-	}
-
-	.experience2_2, .experience3_2 {
-		padding-left: 10px;
-	}
-}
-
-@media screen and (max-width: 480px) { /*Téléphone Vertical*/
-
-	.bloc_AB {
-		display: flex;
-		flex-direction: column;
-		margin: auto;
-		width: 300px;
-	}
-
-	.bloc_B {
-		width: 200px;
-	
-	}
-	.formation2_2 {
-		margin-left: 1px;
-	}
-
-	.experience2_2 {
-		margin-left: 5px;
-	}
-
-	.experience3_2 {
-		margin-left: 12px;
-	}
-
-	.recommandation {
-		display: flex;
-		flex-direction: column;
-	}	
-
-	.recommandation2 {
-		margin-left: -1px;
-	}
-}
-
-@media screen and (max-height: 480px) { /* Téléphone Horizontal*/
-
-	.bloc_AB {
-		width: 300px;
-		margin: auto;
-		margin-left: -10px;
-	}
-	
-	.bloc_A {
-		width: 220px;
-	}
-
-	.biker {
-		margin-left: -105px;
-	}
-
-	.hammer {
-		margin-left: -230px;
-	}
-
-	.book {
-		margin-left: -233px;
-	}
-	.bloc_B {
-		width: 400px;
-	}
-
-	.formation1_2 {
-		margin-right: 20px;
-	}
-
-	.experience2_2 {
-		margin-right: -30px;
-	}
-
-	.recommandation1 {
-		margin-right: -10px;
-	}
-}
+	<div class="bloc_A">
+		<div class="photo">
+			<img class="photo_kev" src="images/photo3.jpg" alt="Photo de Kevin">
+		</div>
+		<h2 class="titre_A">CONTACT</h2>
+			<div class="contact">
+				<p>Adresse<br>Bretagne, France</p>
+				<p>Téléphone<br>06 06 05 05 41</p>
+				<p>E-mail<br>castel.kevin.04@gmail.com</p>
+				<p>Site web<br>www.kevin_castel.com</p>
+			</div>
+		<h2 class="titre_A">À PROPOS DE MOI</h2>
+			<div class="propos">
+				<p>Il faut que je remplisse ce cadre</p>
+			</div>
+
+		<h2 class="titre_A">LOISIRS</h2>
+			<div class="loisirs">
+				<div class="biker">
+					<img class="logo" src="images/biker.png" alt="VTT">
+				</div>
+				<div class="hammer">
+					<img class="logo" src="images/hammer.png" alt="bricolage">
+				</div>
+				<div class="book">
+					<img class="logo" src="images/book.png" alt="lecture">
+				</div>
+			</div>
+	</div>
+
+	<div class="bloc_B">
+		<div class="titre">
+			<h1><span class="kevin">Kevin</span> Castel</h1>
+			<div class="sous_titre">
+				<h2><span class="sous_titre_2">Devel</span>oppeur Web Junior</h2>
+			</div>
+		</div>
+			<div class="formation0">
+				<img class="hat" src="images/hat.png" alt="etude">
+				<h3>FORMATION</h3>
+			</div>
+				<div class="formation">
+					<div class="formation1">
+						<div class="formation1_1">
+							<img class="point" src="images/point2.png" alt="point">
+							<p>2020 - 2021<br>Morlaix<p>
+						</div>
+						<div class="formation1_2">
+							<p class="titre1_2">OpenClassRooms</p>
+							<p class="sous_titre1_2">Developpeur web junior</p> 
+							<p>C'est une formation qui s'est déroulé en télétravail avec l'appuie d'un mentor. Cela m'a permis de développer une grande autonomie et une rigueur importante</p>
+						</div>
+					</div>
+					<div class="formation2">
+						<div class="formation2_1">
+							<img class="point" src="images/point.png" alt="point">
+							<p>2009 - 2010<br>Morlaix</p>
+						</div>
+						<div class="formation2_2">
+							<p class="titre2_2">License Professionnel Formapack</p>
+							<p class="sous_titre2_2">Technico-commercial</p>
+							<p>Cette license s'effectuais en alternance. Elle m'a permis d'aborder le monde de l'entreprise dans un service commercial et marketing</p>
+						</div>
+					</div>
+				</div>				
+				<div class="experience0">
+					<img class="briefcase" src="images/briefcase.png" alt="experience">
+					<h3>EXPÉRIENCE PROFESSIONELLE</h3>
+				</div>
+				<div class="experience">
+					<div class="experience1">
+						<div class="experience1_1">
+							<img class="point" src="images/point2.png" alt="point">
+							<p>2020 - 2021<br>Lanmeur</p>
+						</div>
+						<div class="experience1_2">
+							<p class="titre1_2">Hôpital de Lanmeur</p>
+							<p class="sous_titre1_2">Technicien en blanchisserie</p>
+							<p>C'est un poste que j'effectue actuellement. C'est un travail d'équipe qui demande l'appuie entre les différents collaborateur. Il faut respecter des normes d'hygiène strict</p>
+						</div>
+					</div>
+					<div class="experience2">
+						<div class="experience2_1">
+							<img class="point" src="images/point.png" alt="point">
+							<p>2019 - 2020<br>Morlaix</p>
+						</div>
+						<div class="experience2_2">
+							<p class="titre2_2">Société Ekwateur</p>
+							<p class="sous_titre2_2">Télé-conseiller</p>
+							<p>Je travaillais pour cette société en tant qu'auto-entrepreneur. je travaillais de mon domicile. Cela demandais une rigueur et une autonomie</p>
+						</div>
+					</div>
+					<div class="experience3">
+						<div class="experience3_1">
+							<img class="point" src="images/point.png" alt="point">
+							<p>2018 - 2019<br>Morlaix</p>
+						</div>
+						<div class="experience3_2">
+							<p class="titre3_2">Groupe La Poste</p>
+							<p class="sous_titre3_2">Facteur</p>									
+							<p>Je travaillais seul sur une tournée (Des quartiers prédéfinis au préalable). Je postais le courrier, livrais les colis et faisais signer les différents recommandés. Le facteur à aujourd'hui une casquette de commercial car il doit vendre d'autres services afin de palier à la baisse d'activité concernant le courrier</p>
+						</div>
+					</div>
+				</div>				
+				<div class="recommandation0">
+					<img class="edit" src="images/edit.png" alt="recommandation">
+					<h3>RECOMMANDATIONS</h3>
+				</div>
+				<div class="recommandation">
+					<div class="recommandation1">
+						<p>Jean LASALLE</p>
+						<p class="statut">Directeur, Agence LACHAMBRE</p>
+						<p class="telephone">Téléphone : 06 06 06 06 06</p>
+						<p>Email : jean_lasalle@gmail.com</p>
+					</div>
+					<div class="recommandation2">
+						<p>Rémi Cointreau</p>
+						<p class="statut">Président, Entreprise Chiffou</p>
+						<p class="telephone">Téléphone : 07 07 07 07 07</p>
+						<p>Email : remi_cointreau@hotmail.com</p>
+					</div>
+				</div>
+	</div>
+</div>
+</body>
+</html>
