@@ -371,7 +371,7 @@ p, ul {
 	}
 }
 
-@media screen and (max-width: 480px) { /*Téléphone Vertical*/
+@media screen and (max-width: 480px)  { /*Téléphone Vertical*/
 
 	.bloc_AB {
 		display: flex;
@@ -381,7 +381,7 @@ p, ul {
 	}
 
 	.bloc_B {
-		width: 200px;
+		width: 250px;
 	
 	}
 	.formation2_2 {
