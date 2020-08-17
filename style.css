@@ -80,6 +80,8 @@ p, ul {
 .propos {
 	height: 300px;
 	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
 
 }
 
@@ -351,7 +353,7 @@ p, ul {
 
 /*Media queries*/
 
-@media all and (min-width: 768px) and (max-width: 1024px) {	/*iPad Vertical*/
+@media all and (min-width: 768px) and (max-width: 1024px) {	/*iPad*/
 
 	.bloc_AB {
 		padding-right: 200px;
@@ -416,6 +418,11 @@ p, ul {
 	
 	.bloc_A {
 		width: 220px;
+	}
+
+	.propos {
+		margin-bottom: 10px;
+		margin-top: -30px;
 	}
 
 	.biker {
